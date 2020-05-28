@@ -41,3 +41,5 @@ while True:
         break
 
 print(f"\033[1;33mGAME OVER! o Jogador venceu {vitorias} Vezes")
+
+# TESTANDO A MUDANÇA DE BRAÇO
