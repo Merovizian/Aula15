@@ -10,8 +10,8 @@ while escolha == 'S':
     sexo = input("Infome o sexo da pessoa: ").upper()
     nascimento = input("Informe a data de nascimento[dd/mm/aaa]: ")
 
-    if idade.ano(nascimento) in range(0,140):
-        if idade.ano(nascimento) > 18:
+    if idade.ano(nascimento) != -1:
+        if idade.ano(nascimento) > 18 and (sexo in feminino or sexo in masculino):
             quantidade_18 += 1
         if sexo in masculino:
             quantidade_masculino += 1
