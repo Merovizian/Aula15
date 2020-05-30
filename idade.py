@@ -7,8 +7,8 @@ MES = idade.mes(arg)
 ANO = idade.ano(arg)
 
 ##ERROS:
-Se a data for futura: Ele dira que a data é incorreta e retorna -1.
-Se for um dia que o mês não tem: Ele avisa que o mes tem determinado limite e retorna -1.
+Se a data for futura: Ele dira que a data é incorreta e retorna -1 no braço ano.
+Se for um dia que o mês não tem: Ele avisa que o mes tem determinado limite e retorna -1 no braço ano.
 
 '''
 
