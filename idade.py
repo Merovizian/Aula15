@@ -26,13 +26,13 @@ def ano (nascimento):
     if dia > 31 or mes > 12 or (
             ano > datetime.now().year or (ano == datetime.now().year and mes > datetime.now().month) or (
             ano == datetime.now().year and mes == datetime.now().month and dia > datetime.now().day)):
-        print("\033[1;31mInforme uma data correta!")
+        print("\033[1;31mInforme uma data correta!\033[;m")
         return -1
 
     ## Verifica se o mês tem a quantidade de dias certo
     elif dia > (calendar.monthrange(ano, mes)[1]):
         print(
-            f"O Mês {mes} do ano {ano} não tem {dia} dias e sim {calendar.monthrange(ano, mes)[1]} dias\n\033[1;31mInforme uma data correta!")
+            f"O Mês {mes} do ano {ano} não tem {dia} dias e sim {calendar.monthrange(ano, mes)[1]} dias\n\033[1;31mInforme uma data correta!\033[;m")
         return -1
 
     ## Calcula a sua idade em dia, mes e anos.
