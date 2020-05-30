@@ -7,6 +7,7 @@ quantidade_feminino = quantidade_masculino = quantidade_18 = 0
 
 
 while escolha == 'S':
+    print('-'*50)
     sexo = input("Infome o sexo da pessoa: ").upper()
     nascimento = input("Informe a data de nascimento[dd/mm/aaa]: ")
 
@@ -17,12 +18,15 @@ while escolha == 'S':
             quantidade_masculino += 1
         if sexo in feminino and idade.ano(nascimento) < 20:
             quantidade_feminino += 1
+    print('-'*50)
 
     escolha = input (("Deseja continuar? [S/N]: ")).upper()
 
-
+print('-'*50)
 print(f'''Existem {quantidade_18} pessoas com mais de 18 anos.
 Existem {quantidade_masculino} Homens.
 Existem {quantidade_feminino} Mulheres com menos de 20 anos.
 ''')
+print('-'*50)
+
 
