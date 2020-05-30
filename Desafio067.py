@@ -1,3 +1,4 @@
+import idade
 print(f"\033[;1m{'Desafio 067 - Tabuada para o número desejado':*^70}\033[m")
 while True:
     numero = int(input("Quer ver a tabuada de que numero: "))
