@@ -1,5 +1,3 @@
 import idade
-
-data = input("COLOCA A DATA: ")
-
-print(idade.ano(data), idade.mes(data), idade.dia(data))
+data = input()
+print(idade.ano(data))
